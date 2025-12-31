@@ -1,0 +1,31 @@
+{
+  "name": "crm",
+  "version": "1.0.0",
+  "packageManager": "npm@11.7.0",
+  "description": "testing the tech",
+  "license": "ISC",
+  "author": "K.Pradishan",
+  "type": "module",
+  "main": "index.ts",
+  "workspaces": [
+    "modules/**"
+  ],
+  "scripts": {
+    "start": "turbo run start",
+    "dev": "turbo run dev"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.8",
+    "nodemon": "^3.1.11",
+    "tsx": "^4.21.0",
+    "turbo": "^2.7.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.45.1",
+    "fastify": "^5.6.2",
+    "pg": "^8.16.3",
+    "zod": "^4.2.1"
+  }
+}

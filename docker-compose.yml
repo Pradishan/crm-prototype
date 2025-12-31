@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15
+    container_name: CRM-postgres
+    environment:
+      POSTGRES_USER: "${DB_USER:-user}"
+      POSTGRES_PASSWORD: "${DB_PASSWORD:-pass}"
+      POSTGRES_DB: "${DB_NAME:-crm_db}"
+    ports:
+      - "5432:${DB_PORT:-5432}"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
