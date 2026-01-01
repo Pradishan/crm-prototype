@@ -13,7 +13,7 @@ this is prototye for architecture
 
 ## project initialization
 
-1. place all .env files in root file and all modul's rootfile
+1. place all .env files in root file and all modul's rootfile.
 
    - eg: ./backed/modules.api-gateway/
 
