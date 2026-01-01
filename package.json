@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "start": "turbo run start",
-    "dev": "turbo run dev"
+    "dev": "turbo run dev --parallel"
   },
   "devDependencies": {
     "drizzle-kit": "^0.31.8",
