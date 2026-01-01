@@ -1,0 +1,43 @@
+{
+  "name": "user-service",
+  "version": "1.0.0",
+  "description": "testing the tech",
+  "license": "ISC",
+  "author": "K.Pradishan",
+  "type": "module",
+  "main": "server.ts",
+  "workspaces": [
+    "modules/**"
+  ],
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "dev": "nodemon --exec tsx src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:generate": "drizzle-kit generate --config ./drizzle.config.ts",
+    "db:migrate": "drizzle-kit migrate --config ./drizzle.config.ts",
+    "db:push": "drizzle-kit push --config ./drizzle.config.ts",
+    "db:seed": "tsx src/db/seed.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/pg": "^8.16.0",
+    "drizzle-kit": "^1.0.0-beta.8-734e789",
+    "nodemon": "^3.1.11",
+    "tsx": "^4.21.0",
+    "turbo": "^2.7.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@pothos/core": "^4.10.1",
+    "@pothos/plugin-drizzle": "^0.16.1",
+    "@types/bcrypt": "^6.0.0",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^1.0.0-beta.6-4414a19",
+    "fastify": "^5.6.2",
+    "graphql": "^16.12.0",
+    "mercurius": "^16.6.0",
+    "pg": "^8.16.3",
+    "zod": "^4.2.1"
+  }
+}
